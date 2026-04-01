@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import HeaderSection from '../sections/headerSection.svelte';
+	import ProjectSection from '../sections/projectSection.svelte';
+	import SkillsSection from '../sections/skillsSection.svelte';
+	import TimelineSection from '../sections/timelineSection.svelte';
+</script>
+
+<HeaderSection />
+<SkillsSection />
+<TimelineSection />
+<ProjectSection />
