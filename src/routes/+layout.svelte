@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Daniel Bailey | Software Developer</title>
 </svelte:head>
 
 {@render children()}

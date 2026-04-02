@@ -29,6 +29,7 @@
 		position: relative;
 		transition: var(--transition);
 		outline-offset: var(--border-width);
+		padding-inline: var(--spacing-0-5);
 
 		&::after {
 			content: '';

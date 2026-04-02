@@ -10,24 +10,24 @@
 		{
 			title: 'CV',
 			href: 'https://drive.google.com/file/d/1piQlVBi1FtH2EVaSmb6zkBNC6Cc3pHk0/view?usp=sharing',
-			color: '#66a3ff'
+			color: 'var(--accent-color-1)'
 		},
 		{
 			title: 'GitHub',
 			href: 'https://github.com/DanRLBailey',
-			color: '#c566ff'
+			color: 'var(--accent-color-2)'
 		},
 		{
 			title: 'LinkedIn',
 			href: 'https://www.linkedin.com/in/danrbailey/',
-			color: '#ffc266'
+			color: 'var(--accent-color-3)'
 		}
 	];
 </script>
 
 <section>
 	<h1>Daniel Bailey</h1>
-	<h2>Web & Software Developer</h2>
+	<h2>Software Developer</h2>
 
 	<div class="header-links flex-row justify-start">
 		{#each headerLinks as link}
@@ -40,6 +40,11 @@
 
 <style lang="scss">
 	.header-links {
-		margin-block-end: var(--spacing);
+		margin-block: calc(var(--spacing) * 2);
+	}
+
+	h2 {
+		color: var(--font-color-2);
+		font-size: 1.5rem;
 	}
 </style>

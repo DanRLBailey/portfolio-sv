@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;600;700&display=swap');
 
 html {
-	--background-color: light-dark(#f7f8f2, #131216);
+	--background-color: light-dark(#f3f5e9, #131216);
 	--font-color: light-dark(#000, #fff);
 	--font-color-reverse: light-dark(#fff, #000);
+	--font-color-2: light-dark(#2e2e2e, #c2c2c2);
+
+	--border-color: var(--font-color);
+
+	--accent-color-1: light-dark(#4774b8, #66a3ff);
+	--accent-color-2: light-dark(#8d3dbe, #c566ff);
+	--accent-color-3: light-dark(#d89837, #ffc266);
 
 	--transition: 0.2s ease-out;
 	--border-width: 3px;
 
+	--spacing-0-5: calc(var(--spacing) * 0.5);
 	--spacing: 0.5rem;
+	--spacing-2: calc(var(--spacing) * 2);
+	--spacing-4: calc(var(--spacing) * 4);
 
 	background-color: var(--background-color);
 	font-family: 'Sulphur Point', sans-serif;
@@ -33,7 +43,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	margin: 0;
 }
 
@@ -52,7 +63,7 @@ h3 {
 button {
 	padding: var(--spacing);
 	background-color: transparent;
-	border: var(--border-width) solid white;
+	border: var(--border-width) solid var(--border-color);
 	font-size: 0.75rem;
 	cursor: pointer;
 	position: relative;
@@ -61,17 +72,20 @@ button {
 	&::after {
 		content: '';
 		position: absolute;
-		inset: var(--border-width);
+		inset: 0;
 		transform: scaleY(0);
 		transform-origin: bottom;
-		background-color: currentColor;
+		background-color: var(--border-color);
 		transition: var(--transition);
+		z-index: -1;
 	}
 
 	&:hover,
 	&:focus {
+		color: var(--font-color-reverse);
+
 		&::after {
-			transform: scaleY(0.15);
+			transform: scaleY(1);
 		}
 	}
 }
@@ -110,6 +124,10 @@ section {
 	justify-content: flex-end;
 }
 
+.justify-between {
+	justify-content: space-between;
+}
+
 .align-start {
 	align-items: flex-start;
 }
@@ -124,6 +142,7 @@ section {
 
 @media (prefers-color-scheme: dark) {
 	html {
+		// color-scheme: light;
 		color-scheme: dark;
 	}
 }

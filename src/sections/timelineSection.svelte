@@ -3,24 +3,23 @@
 
 	const items: TimelineItem[] = [
 		{
-			title: 'University',
-			subtitle: 'Staffordshire University',
+			title: 'Staffordshire University',
 			text: 'Games Development',
-			date: 'September 2016 - June 2020'
+			date: 'September 2016'
 		},
 		{
-			title: 'BEP Systems',
+			title: 'Finova',
 			text: 'Graduate Developer',
 			date: 'February 2021'
 		},
 		{
 			title: 'OpenMoney',
-			text: 'Developer',
+			text: 'Full-stack Developer',
 			date: 'November 2022'
 		},
 		{
 			title: 'Raytheon',
-			text: 'Developer',
+			text: 'Full-stack Developer',
 			date: 'July 2023'
 		}
 	];
